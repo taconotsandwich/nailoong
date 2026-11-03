@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Nailoong Image Swap",
+  "version": "1.0.0",
+  "description": "Swaps images on every website with Nailoong.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.bing.com/images/async*",
+    "https://ts1.mm.bing.net/*",
+    "https://ts2.mm.bing.net/*",
+    "https://ts3.mm.bing.net/*",
+    "https://ts4.mm.bing.net/*"
+  ],
+  "action": {
+    "default_title": "Nailoong Image Swap",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

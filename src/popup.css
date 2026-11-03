@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  min-width: 220px;
+  font: 13px/1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #171717;
+  background: #ffffff;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px;
+}
+
+strong,
+small {
+  display: block;
+}
+
+strong {
+  font-size: 14px;
+  font-weight: 650;
+}
+
+small {
+  margin-top: 2px;
+  color: #666666;
+}
+
+input {
+  width: 42px;
+  height: 24px;
+}

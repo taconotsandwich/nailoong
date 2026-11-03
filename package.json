@@ -1,0 +1,17 @@
+{
+  "name": "nailoong-image-swap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Chrome Manifest V3 extension that swaps website images with Nailoong images.",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:dev": "NAILOONG_DEV=1 node scripts/build.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  }
+}
